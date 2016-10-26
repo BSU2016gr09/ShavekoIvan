@@ -13,21 +13,19 @@ void createArray(int a[], int N)
 }
 void swapArray(int a[], int N)
 {
-	int i = 0, k = N - 1;//Никак нельзя без переменной k????
-		while (i < N / 2)//проверял работоспособность при разных N?
+	int i = 0;
+		while (i < N / 2)
 		{
-			swap(a[i], a[k]);
+			swap(a[i], a[N-i-1]);
 			i++;
-			k--;
 		}
-	}
 }
 void coutArray(int a[], int N)
 {
 	int i = 0;
 	while (i < N)
 	{
-		cout << a[i] << ' ';//можно в одну строку. Подумай как!!!
+		cout << a[i] << ' ';
 		i++;
 	}
 	cout << endl;
