@@ -24,7 +24,7 @@ void rightArray(int a[], int N)
 	int i = 0;
 	while (i < N - 1)
 	{
-		swap(a[N-1], a[i]);
+		swap(a[N-1], a[i]);//И вот так работает?????? Прикольно....
 		i++;
 	}
 }
