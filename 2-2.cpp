@@ -25,7 +25,7 @@ void rightArray(int a[], int N)
 	while (i > 0)
 	{
 		swap(a[i], a[i-1]);
-		i++;
+		i--;
 	}
 }
 void coutArray(int a[], int N)
