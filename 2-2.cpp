@@ -21,10 +21,10 @@ void leftArray(int a[], int N)
 }
 void rightArray(int a[], int N)
 {
-	int i = 0;
-	while (i < N - 1)
+	int i = N-1;
+	while (i > 0)
 	{
-		swap(a[N-1], a[i]);
+		swap(a[i], a[i-1]);
 		i++;
 	}
 }
