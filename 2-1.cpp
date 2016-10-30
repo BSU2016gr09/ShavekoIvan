@@ -25,8 +25,7 @@ void coutArray(int a[], int N)
 	int i = 0;
 	while (i < N)
 	{
-		cout << a[i] << ' ';//тут так и не переделал ((((
-		i++;
+		cout << a[i++] << ' ';
 	}
 	cout << endl;
 }
