@@ -1,7 +1,7 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <clocale>
 using namespace std;
-//Íàïèøèòå èãðó â êîñòè ìåæäó ÷åëîâåêîì è êîìïüþòåðîì. Îíè ïî î÷åðåäè êèäàþò ïî äâà êóáèêà. Ïîáåæäàåò òîò ó êîãî ñóììà áîëüøå. Èãðà çàêàí÷èâàåòñÿ åñëè íàáðàíà ñóììà >50
+//ÐÐ°Ð¿Ð¸ÑˆÐ¸Ñ‚Ðµ Ð¸Ð³Ñ€Ñƒ Ð² ÐºÐ¾ÑÑ‚Ð¸ Ð¼ÐµÐ¶Ð´Ñƒ Ñ‡ÐµÐ»Ð¾Ð²ÐµÐºÐ¾Ð¼ Ð¸ ÐºÐ¾Ð¼Ð¿ÑŒÑŽÑ‚ÐµÑ€Ð¾Ð¼. ÐžÐ½Ð¸ Ð¿Ð¾ Ð¾Ñ‡ÐµÑ€ÐµÐ´Ð¸ ÐºÐ¸Ð´Ð°ÑŽÑ‚ Ð¿Ð¾ Ð´Ð²Ð° ÐºÑƒÐ±Ð¸ÐºÐ°. ÐŸÐ¾Ð±ÐµÐ¶Ð´Ð°ÐµÑ‚ Ñ‚Ð¾Ñ‚ Ñƒ ÐºÐ¾Ð³Ð¾ ÑÑƒÐ¼Ð¼Ð° Ð±Ð¾Ð»ÑŒÑˆÐµ. Ð˜Ð³Ñ€Ð° Ð·Ð°ÐºÐ°Ð½Ñ‡Ð¸Ð²Ð°ÐµÑ‚ÑÑ ÐµÑÐ»Ð¸ Ð½Ð°Ð±Ñ€Ð°Ð½Ð° ÑÑƒÐ¼Ð¼Ð° >50
 void drawCube(int n)
 {
 	switch (n)
@@ -24,7 +24,7 @@ void playGame(int yourpoints, int computerpoints)
 	while (yourpoints <= 50 && computerpoints <= 50)
 	{
 		int i = 0, n=0;
-		cout << "Âàøè êîñòè:\n";
+		cout << "Ð’Ð°ÑˆÐ¸ ÐºÐ¾ÑÑ‚Ð¸:\n";
 		while (i < 2)
 		{
 			throwCube(n);
@@ -32,7 +32,7 @@ void playGame(int yourpoints, int computerpoints)
 			i++;
 		}
 		i = 0;
-		cout << "Êîñòè êîìïüþòåðà:\n";
+		cout << "ÐšÐ¾ÑÑ‚Ð¸ ÐºÐ¾Ð¼Ð¿ÑŒÑŽÑ‚ÐµÑ€Ð°:\n";
 		while (i < 2)
 		{
 			throwCube(n);
@@ -43,9 +43,9 @@ void playGame(int yourpoints, int computerpoints)
 }
 	void checkResult(int yourpoints, int computerpoints)
 	{
-        if (yourpoints > computerpoints) cout << "Âû ïîáåäèëè";
-		else if (yourpoints < computerpoints) cout << "Âû ïðîèãðàëè";
-		else cout << "Íè÷üÿ";
+        if (yourpoints > computerpoints) cout << "Ð’Ñ‹ Ð¿Ð¾Ð±ÐµÐ´Ð¸Ð»Ð¸";
+		else if (yourpoints < computerpoints) cout << "Ð’Ñ‹ Ð¿Ñ€Ð¾Ð¸Ð³Ñ€Ð°Ð»Ð¸";
+		else cout << "ÐÐ¸Ñ‡ÑŒÑ";
 	}
 int main()
 {
