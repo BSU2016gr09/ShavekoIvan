@@ -37,18 +37,19 @@ void sortArray(int arr[], int N)
 }
 void checkSame(int arr[], int N)
 {
-	int i = 0;
+	int i = 0, m=0;
 	while (i < N)
 	{
-		int k = 1, j = i + 1;
-		while (j < N)
+		int j = i + 1, k=1;
+		while (arr[i]==arr[j])
 		{
-			if (arr[i] == arr[j]) k++;
+			k++;
 			j++;
 		}
-		if (k > 1) cout << "Элемент " << arr[i] << " повторяется " << k << " раза" << endl;
-		i = i + k;
+		if (k != 1) m++;
+		i = i + k;;
 	}
+	cout << "Количество повторяющихся элементов = " << m;
 }
 int main()
 {
