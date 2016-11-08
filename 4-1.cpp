@@ -1,8 +1,9 @@
 #include <iostream>
 #include <locale>
 #include <conio.h>
-const int N = 100;
+const int N = 5;
 using namespace std;
+//Реализовать операции целочисленной арифметики на массивах
 void printNum(int arr[])
 {
 	int i = N-1;
