@@ -1,7 +1,6 @@
 #include <iostream>
 #include <locale>
-#include <conio.h>
-const int N = 5;
+const int N = 100;
 using namespace std;
 //Реализовать операции целочисленной арифметики на массивах
 void printNum(int arr[])
@@ -36,8 +35,7 @@ void Diff(int a[], int b[], int rez[])
 		else
 		{
 			a[i + 1] -= 1;
-			a[i] += 10;
-			rez[i] = a[i] - b[i];
+			rez[i] = a[i] - b[i] + 10;
 		}
 		i++;
 	}
