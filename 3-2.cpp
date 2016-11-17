@@ -29,7 +29,7 @@ void sortArray(int arr[], int N)
 		int j = 0;
 		while (j < N - i - 1)
 		{
-			if (arr[j] > arr[j + 1]) swap(arr[j], arr[j + 1]);
+			if (arr[j] > arr[j + 1]) swap(arr[j], arr[j + 1]);//на занятиях упоминалось как улучшить этот галимый алгоритм сортировки
 			j++;
 		}
 		i++;
