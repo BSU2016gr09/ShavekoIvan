@@ -15,7 +15,7 @@ void leftArray(int a[], int N)
 	int i = 0;
 	while (i < N-1)
 	{
-	        swap(a[i], a[i + 1]);
+	        swap(a[i], a[i + 1]);//без swap просили
 		i++;
 	}
 }
@@ -24,7 +24,7 @@ void rightArray(int a[], int N)
 	int i = N-1;
 	while (i > 0)
 	{
-		swap(a[i], a[i-1]);
+		swap(a[i], a[i-1]);//без swap просили
 		i--;
 	}
 }
