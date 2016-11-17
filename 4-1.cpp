@@ -12,7 +12,7 @@ void printNum(int arr[])
 void inputArray(int arr[])
 {
 	int i = 0;
-	cin >> arr[i++];
+	cin >> arr[i++];//Уух!!!!!!!!! Круто в С++ оказывается можно ввести массив без цикла! Урра!!! Надо всем рассказать, а то мы как лохи пишем много кода
 	
 }
 void Sum(int a[], int b[], int rez[])
@@ -48,7 +48,7 @@ int main()
 	printNum(a);
 	inputArray(b);
 	printNum(b);
-	Sum(a, b, r);
+	Sum(a, b, r);//а где это: В цикле вычислить максимальное возможное на этих массивах число Фибоначчи 1,1,2,3,.... 
 	printNum(r);
 	Diff(a, b, r);
 	printNum(r);
