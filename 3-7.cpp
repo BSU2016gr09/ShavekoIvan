@@ -2,14 +2,14 @@
 #include <locale>
 using namespace std;
 //Реализовать функции для работы с очередью. Продемонстрировать их работоспособность вызывая из main. Показать, что очередь размера 4 не переполняется. Если добавить 3 элемента, потом удалить 2, а потом еще раз добавить 3 элемента.
-void putQueue(int q[], int N, int&last, int a)
+void putQueue(int q[], int N, int&last, int a)//что на название?????
 {
-	q[last]=a;
+	q[last]=a;//Нет проверки на переполнение!!!!!!
 	last = (last + 1) % N;
 }
 int getQueue(int q[], int N, int&first)
 {
-	return q[first];
+	return q[first];//нет проверки на пустоту....
 	first = (first + 1) % N;
 }
 int main()
