@@ -43,7 +43,7 @@ int main()
 {
 	const int N = 10;
 	int arr[N], k;
-	int b[N];
+	int b[N];// Это что еще за доп. массив!!!! В условии надо делать все в arr
 	cin >> k;
 	createArray(arr, N);
 	coutArray(arr, N);
