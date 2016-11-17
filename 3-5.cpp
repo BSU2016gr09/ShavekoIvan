@@ -2,7 +2,7 @@
 #include <locale>
 using namespace std;
 //В программе задана последовательность из открывающихся и закрывающихся скобочек 3 видов. Например, char test[]="(aa[b(c)ddd]e{ee})"; Проверить правильность растановки скобок в этом выражении c помощью стека в котором хранятся char. Чтобы использовать очередной элемент строки (aa[b(c)ddd]e{ee}) достаточно написать test[0], test[1] ит..д. т.е. в цикле test[i].
-int  pushStack(int top,char test[], char stack[], int i )
+int  pushStack(int top,char test[], char stack[], int i )//что то не то!!!! Надо использовать ту же функцию, что в задании 3-4 
 {
 	if (top == 20) return 0;
 	else
@@ -25,7 +25,7 @@ void checkTest(char test[], int max, int top, char st[])
 	{
 		if (test[i] == '(' || test[i] == '{' || test[i] == '[') pushStack(top, test, st, i);
 		else
-			if (test[i] == ')' || test[i] == '}' || test[i] == ']') popStack(top, st);
+			if (test[i] == ')' || test[i] == '}' || test[i] == ']') popStack(top, st);//нет проверки на "парность" скобок! Как отследить ситуацию {aa[bb)c}
 			else;
 			i++;
 	}
