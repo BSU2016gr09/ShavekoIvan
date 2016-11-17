@@ -25,7 +25,7 @@ void playGame(int yourpoints, int computerpoints)
 	{
 		int i = 0, n=0;
 		cout << "Ваши кости:\n";
-		while (i < 2)
+		while (i < 2)// мне кажется очевиднее не цикл, который повторяется ВСЕГО 2 раза, а throwCube(n);yourpoints +=n;throwCube(n);yourpoints +=n;
 		{
 			throwCube(n);
 			yourpoints +=n;
