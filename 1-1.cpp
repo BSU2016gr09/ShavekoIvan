@@ -25,7 +25,7 @@ int main() {
 	setlocale(LC_ALL,"Russian");
 	int N;
 	cin >> N;
-	int* arr = new int[N];
+	int* arr = new int[N];//Где выделение и контроль динамической памяти??? Почему выделение не в отдельной функции???
 	cout << "Введите массив\n";
 	inputArray(arr, N);
 	sortArray(arr, N);
