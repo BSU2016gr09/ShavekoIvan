@@ -3,13 +3,13 @@
 
 using namespace std;
 
-class Complex{
+class Complex{//неужели нечего в private секцию засунуть????
 public:
     double re;
     double im;
 
     void printComplex(){
-        cout<<re<<"+"<<im<<"i"<<'\n';
+        cout<<re<<"+"<<im<<" *i"<<'\n';
     }
 
     double abs(){//module
