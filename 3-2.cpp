@@ -24,7 +24,7 @@ void initArray(int **arr, int N, int M) {
 
 void printArray(int **arr, int N, int M) {
 	for (int i = 0; i < N; i++) {
-		if (arr[i] != nullptr) {
+		if (arr[i] != nullptr) {//лишнее условие внутри if
 			for (int j = 0; j < M; j++) cout << setw(4) << arr[i][j];
 			cout << endl;
 		}
@@ -32,9 +32,9 @@ void printArray(int **arr, int N, int M) {
 	cout << endl;
 }
 
-void deleteNull(int **arr, int N, int i) {
+void deleteNull(int **arr, int N, int i) {//Зачем сюда передавать N???
 	delete[]  arr[i];
-	arr[i] = nullptr;
+	arr[i] = nullptr;//я бы просто сюда передавал следующую строку, например... Или как-то еще переставлял строки в матрице
 }
 
 void findNull(int**arr, int N, int M) {
@@ -44,7 +44,7 @@ void findNull(int**arr, int N, int M) {
 			if (arr[i][j] != 0) flag = 1;
 			break;
 		}
-		if (flag == 0) deleteNull(arr, N, i);
+		if (flag == 0) deleteNull(arr, N, i); //лишнее условие внутри if
 	}
 }
 
