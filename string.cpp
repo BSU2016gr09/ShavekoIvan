@@ -57,7 +57,7 @@ int main() {
     char *str;
     giveMemory(str);
     cout<<"Enter string\n";
-    cin.getline(str, strlen(str));
+    cin.getline(str, strlen(str));//Где считывание из файла???? В условии четко сказано, что не в СТРОКЕ, а  В тексте!!! Он (текст) состоит из строк!!! Надо цикл по ВСЕМ строкам 
     cout<<"Enter item\n";
     a = getchar();
     findWords(str, a);
