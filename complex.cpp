@@ -5,7 +5,7 @@ using namespace std;
 
 class Complex{
 public:
-    Complex(){//конструктор по-умолчанию
+    Complex(){//Лучше приучиться списком инициализации пользоваться 
         this->re=0;
         this->im=0;
         cout<<"Конструктор по-умолчанию\n";
@@ -17,7 +17,7 @@ public:
         cout<<"Конструктор копирования для" <<(this->re)<<(*this).im<<"\n";
     }
 
-    Complex(double b, double c){
+    Complex(double b, double c){//выгоднее было сделать double c=0. Тогда не пришлоcm бы писать operator+(const double& b)
         this->re=b;
         this->im=c;
         cout<<"Конструктор с параметром\n";
@@ -55,7 +55,7 @@ public:
         return *this;
     }
 
-    Complex& operator+(const double& b){
+    Complex& operator+(const double& b){//а зачем здесь амперсант для b
         re+=b;
         return *this;
     }
